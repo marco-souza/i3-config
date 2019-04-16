@@ -9,4 +9,4 @@ apply: config desktop_confg.sh
 	echo "Need to install xrandr"
 	sh desktop_confg.sh
 	#restart i3
-	i3 restart
+	i3 restart || true # avoid restart error
