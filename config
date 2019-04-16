@@ -178,7 +178,7 @@ bar {
         font pango:DejaVu Sans Mono 11
         # workspace_buttons no
         colors {
-                background #333333
+                background #455254
                 statusline #ffffff
                 separator #666666
 
@@ -196,3 +196,7 @@ bindsym $mod+Ctrl+Down exec pactl -- set-sink-volume 0 -5%; exec pkill -RTMIN+10
 
 # define wallpaper
 exec feh --bg-fill $HOME/Imagens/wallpapers/owl.jpg
+
+# Key indicators
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
