@@ -174,5 +174,19 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        position top
+        font pango:DejaVu Sans Mono 11
+        # workspace_buttons no
+        colors {
+                background #333333
+                statusline #ffffff
+                separator #666666
+
+                focused_workspace  #6fb194 #173c1c #ffffff
+                active_workspace   #333333 #5f676a #ffffff
+                inactive_workspace #333333 #222222 #888888
+                urgent_workspace   #2f343a #900000 #ffffff
+                binding_mode       #2f343a #900000 #ffffff
+        }
 }
 
