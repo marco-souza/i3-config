@@ -4,7 +4,7 @@ apply: config desktop_confg.sh
 	# copy local config
 	cp config desktop_confg.sh ${HOME}/.config/i3
 	# copy i3status config
-	sudo cp i3status.conf /etc/i3status.conf
+	sudo cp i3status.conf ~/.i3status.conf
 	# copy apply desktop config with arandr
 	echo "Need to install xrandr"
 	sh desktop_confg.sh
