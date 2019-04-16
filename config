@@ -191,8 +191,8 @@ bar {
 }
 
 # Audio controller
-bindsym $mod+Ctrl+Up exec pactl -- set-sink-volume 0 +5%
-bindsym $mod+Ctrl+Down exec pactl -- set-sink-volume 0 -5%
+bindsym $mod+Ctrl+Up exec pactl -- set-sink-volume 0 +5%; exec pkill -RTMIN+10 i3blocks
+bindsym $mod+Ctrl+Down exec pactl -- set-sink-volume 0 -5%; exec pkill -RTMIN+10 i3blocks
 
 # define wallpaper
 exec feh --bg-fill $HOME/Imagens/wallpapers/owl.jpg
