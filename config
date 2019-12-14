@@ -193,7 +193,7 @@ client.urgent               $rd        $rd         $tx
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        mode hide # hide bar
+        mode invisible # hide bar
         status_command i3blocks
         position bottom
         font pango:DejaVu Sans Mono 11
@@ -262,3 +262,14 @@ for_window [class="plasmashell" window_type="notification"] floating enable, bor
 
 exec --no-startup-id nitrogen --restore
 
+
+# Setup i3-gaps
+smart_gaps on
+
+hide_edge_borders both
+for_window [class="^.*"] border pixel 2
+gaps inner 15
+gaps outer 15
+
+bindsym $mod+z		gaps outer current plus 5
+bindsym $mod+Shift+z	gaps outer current minus 5
