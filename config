@@ -34,6 +34,7 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 bindsym ctrl+$mod+space exec --no-startup-id krunner
+bindsym ctrl+alt+\ exec --no-startup-id yakuake
 
 # Start Applications
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
@@ -242,8 +243,8 @@ mode "resize" {
 
 
 # Autostart applications
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
-exec --no-startup-id krunner -d
+exec --no-startup-id "nitrogen --restore; sleep 1; compton -b"
+exec --no-startup-id "krunner -d"
 
 
 # Color palette used for the terminal ( ~/.Xresources file )
