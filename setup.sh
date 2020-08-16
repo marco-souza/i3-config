@@ -1,9 +1,12 @@
 #! /bin/bash
 
 # install i3 (arch)
-[[ ! -e /usr/bin/i3 ]] && sudo pacman -Syu nitrogen gnome-keyring compton i3
+[[ ! -e /usr/bin/i3 ]] && sudo pacman -Syu nitrogen gnome-keyring picom i3
 
 # copy initializer option
-sudo cp ./plasma-i3.desktop /usr/share/xsessions/plasma-i3.desktop
-[[ ! -d $HOME/.config/i3/ ]] && mkdir -p $HOME/.config/i3/
-cp config $HOME/.config/i3/config
+sddm_file=/usr/share/xsessions/plasma-i3.desktop
+[[ ! -e $sddm_file ]] && sudo cp ./plasma-i3.desktop $sddm_file
+
+config_folder=$HOME/.i3/
+[[ ! -d $config_folder ]] && mkdir -p $config_folder
+cp config $config_folder/config
