@@ -10,3 +10,6 @@ sddm_file=/usr/share/xsessions/plasma-i3.desktop
 config_folder=$HOME/.i3/
 [[ ! -d $config_folder ]] && mkdir -p $config_folder
 cp config $config_folder/config
+
+file=$HOME/.config/picom.conf
+[[ ! -d $file ]] && cp /etc/xdg/picom.conf.example $file
