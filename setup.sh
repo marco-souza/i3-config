@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # install i3 (arch)
-[[ ! -e /usr/bin/i3 ]] && sudo pacman -Syu nitrogen gnome-keyring picom i3
+[[ ! -e /usr/bin/picom ]] && sudo pacman -Syu nitrogen gnome-keyring picom i3
 
 # copy initializer option
 sddm_file=/usr/share/xsessions/plasma-i3.desktop
