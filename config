@@ -344,7 +344,7 @@ for_window [class="Kmix"] floating enable, border none
 for_window [class="Klipper"] floating enable, border none
 for_window [class="Plasmoidviewer"] floating enable, border none
 for_window [class="krunner"] floating enable, border none, move position 700 300
-for_window [class="plasmashell" window_type="notification"] floating enable, border none, move position 1580 50
+for_window [class="plasmashell" window_type="notification"] floating enable, border none, move position 1560 70
 no_focus [window_type="notification"]
 
 
