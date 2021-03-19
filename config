@@ -33,7 +33,7 @@ bindsym $mod+Return exec konsole
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+space exec --no-startup-id krunner
+bindsym $mod+space exec krunner --replace
 bindsym ctrl+$mod+space exec --no-startup-id yakuake
 
 # Start Applications
@@ -343,8 +343,9 @@ for_window [title="win7"] floating enable, border none
 for_window [class="Kmix"] floating enable, border none
 for_window [class="Klipper"] floating enable, border none
 for_window [class="Plasmoidviewer"] floating enable, border none
-for_window [class="krunner"] floating enable, border none, move position 700 300
-for_window [class="plasmashell" window_type="notification"] floating enable, border none, move position 1560 70
+for_window [class="krunner"] floating enable, border none
+for_window [window_type="krunner"] floating enable, border none
+for_window [window_type="notification"] floating enable, border none
 no_focus [window_type="notification"]
 
 
