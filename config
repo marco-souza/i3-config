@@ -351,5 +351,5 @@ no_focus [window_type="notification"]
 
 # Autostart applications
 # exec --no-startup-id krunner -d
-exec --no-startup-id sleep 1; killall plasmashell && plasmashell
+exec --no-startup-id sleep 1; killall plasmashell; plasmashell
 exec --no-startup-id sleep 2; nitrogen --restore; picom
