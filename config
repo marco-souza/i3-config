@@ -32,8 +32,9 @@ bindsym $mod+Return exec konsole
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start program launcher
-bindsym $mod+space exec krunner --replace
+# setup keybindings
+set $menu --no-startup-id qdbus org.kde.krunner /App display
+bindsym $mod+d exec $menu
 bindsym ctrl+$mod+space exec --no-startup-id yakuake
 
 # Start Applications
